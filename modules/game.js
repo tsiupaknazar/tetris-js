@@ -139,7 +139,6 @@ export class Game {
 
         this.changeTetromino();
 
-        //if (!this.gamePaused) {
         const countRow = this.clearRow();
         this.calcScore(countRow);
         this.updatePanels();
@@ -148,7 +147,6 @@ export class Game {
         if (this.gameOver === true) {
             View.gameOver(this.score);
         }
-        //}
     }
 
     // delete full row

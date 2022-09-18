@@ -85,7 +85,7 @@ export class View {
                     const block = line[x];
                     if (block !== 'o') {
                         context.fillStyle = this.colors[block];
-                        context.strokeStyle = 'white';
+                        context.strokeStyle = '#73ff00';
                         context.fillRect(x * SIZE_BLOCK, y * SIZE_BLOCK, SIZE_BLOCK, SIZE_BLOCK)
                         context.strokeRect(x * SIZE_BLOCK, y * SIZE_BLOCK, SIZE_BLOCK, SIZE_BLOCK)
                     }
@@ -104,7 +104,7 @@ export class View {
                 const block = line[x];
                 if (block !== 'o') {
                     this.context.fillStyle = this.colors[block];
-                    this.context.strokeStyle = 'white';
+                    this.context.strokeStyle = '#73ff00';
                     this.context.fillRect(x * SIZE_BLOCK, y * SIZE_BLOCK, SIZE_BLOCK, SIZE_BLOCK)
                     this.context.strokeRect(x * SIZE_BLOCK, y * SIZE_BLOCK, SIZE_BLOCK, SIZE_BLOCK)
                 }

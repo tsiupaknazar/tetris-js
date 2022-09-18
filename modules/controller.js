@@ -36,9 +36,6 @@ export class Controller {
                     this.game.rotateTetromino();
                     this.view.showArea(this.game.viewArea)
                     break;
-                case 'Space':
-                    this.pause();
-                    break;
             }
         }
 
@@ -60,9 +57,5 @@ export class Controller {
         tick();
 
         window.addEventListener('keydown', listener);
-    }
-
-    pause() {
-        this.game.gamePaused = !this.game.gamePaused;
     }
 }
